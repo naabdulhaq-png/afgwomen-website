@@ -1,0 +1,153 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #4a86e8;
+    color: #fff;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.logo span {
+    color: #ffcc00;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav ul li a.btn {
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 4px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.hero {
+    background: url('https://via.placeholder.com/1200x500.png?text=Education') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.hero-buttons .btn {
+    margin: 5px;
+}
+.btn {
+    display: inline-block;
+    background-color: #4a86e8;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.btn:hover {
+    background-color: #3c6dcc;
+}
+.featured-courses {
+    padding: 50px 0;
+}
+.featured-courses h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    background: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.card h3 {
+    margin: 10px;
+}
+.card p {
+    padding: 0 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+footer .social a {
+    color: #ffcc00;
+    margin: 0 5px;
+    text-decoration: none;
+}
+footer p {
+    margin: 10px 0 0 0;
+    font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    nav.active ul {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
