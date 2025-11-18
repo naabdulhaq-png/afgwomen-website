@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    { 
+      "source": "/courses/english/", 
+      "destination": "/courses/english/lesson1.html" 
+    },
+    { 
+      "source": "/courses/german/", 
+      "destination": "/courses/german/lesson1.html" 
+    },
+    { 
+      "source": "/courses/media/", 
+      "destination": "/courses/media/lesson1.html" 
+    },
+    { 
+      "source": "/courses/business/", 
+      "destination": "/courses/business/lesson1.html" 
+    },
+    { 
+      "source": "/courses/computer/", 
+      "destination": "/courses/computer/lesson1.html" 
+    }
+  ]
+}
