@@ -1,28 +1,33 @@
 {
   "rewrites": [
     { 
-      "source": "/courses/english", 
+      "source": "/courses/english/", 
       "destination": "/courses/english/lesson1.html" 
     },
     { 
-      "source": "/courses/german", 
+      "source": "/courses/german/", 
       "destination": "/courses/german/lesson1.html" 
     },
     { 
-      "source": "/courses/media", 
+      "source": "/courses/media/", 
       "destination": "/courses/media/lesson1.html" 
     },
     { 
-      "source": "/courses/business", 
+      "source": "/courses/technology/", 
+      "destination": "/courses/technology/lesson1.html" 
+    },
+    { 
+      "source": "/courses/business/", 
       "destination": "/courses/business/lesson1.html" 
     },
     { 
-      "source": "/courses/computer", 
+      "source": "/courses/computer/", 
       "destination": "/courses/computer/lesson1.html" 
     },
+    // This rewrite forces the main category path to work if clicked directly
     { 
-      "source": "/courses/technology", 
-      "destination": "/courses/technology/lesson1.html" 
+      "source": "/courses/english", 
+      "destination": "/courses/english/lesson1.html" 
     }
   ]
 }
