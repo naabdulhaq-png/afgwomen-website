@@ -1,75 +1,92 @@
 /* style.css */
+
+/* --- 1. Base Styles and Font Improvement --- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    /* Use a modern, readable sans-serif font */
+    font-family: 'Open Sans', Arial, sans-serif;
+    /* Increased line height for better readability */
+    line-height: 1.65;
     color: #333;
+    background-color: #f9f9f9; /* Light background for the page */
 }
+
+/* Global container for width control */
 .container {
-    max-width: 1000px;
+    /* Slightly increased max-width for better use of screen space */
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* --- 2. Header and Navigation (Unchanged/Refined) --- */
 header {
     background-color: #4a86e8;
     color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 15px 0;
 }
+
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.6em;
+    font-weight: 700;
 }
+
 .logo span {
     color: #ffcc00;
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
+
 nav ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 12px;
+    transition: color 0.3s;
 }
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
 nav ul li a.btn {
     background-color: #ffcc00;
     color: #000;
     border-radius: 4px;
+    padding: 8px 15px;
+    font-weight: 600;
+    transition: background-color 0.3s;
 }
+
+nav ul li a.btn:hover {
+    background-color: #e6b800;
+}
+
 .menu-toggle {
     display: none;
     font-size: 1.5em;
     cursor: pointer;
 }
-.hero {
-    background: url('https://via.placeholder.com/1200x500.png?text=Education') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-.hero-buttons .btn {
-    margin: 5px;
-}
+
+/* --- 3. Buttons (General) --- */
 .btn {
     display: inline-block;
     background-color: #4a86e8;
@@ -77,77 +94,221 @@ nav ul li a.btn {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
 }
+
 .btn:hover {
     background-color: #3c6dcc;
+    transform: translateY(-1px);
 }
-.featured-courses {
+
+/* --- 4. Course Categories Section (Targeting Screenshot 1) --- */
+.course-section {
     padding: 50px 0;
-}
-.featured-courses h2 {
     text-align: center;
-    margin-bottom: 30px;
 }
-.card-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+.course-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
-.card {
-    background: #f4f4f4;
+
+.course-section p {
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Use CSS Grid for the card layout to maintain 3 columns */
+.course-category-grid {
+    display: grid;
+    /* Create three columns of equal fractional width */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 100%; /* Ensure it uses the full container width */
+    margin: 0 auto;
+}
+
+/* General style for the course cards */
+.course-card {
+    background: #fff;
     border-radius: 8px;
     overflow: hidden;
-    margin: 10px;
-    max-width: 300px;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left; /* Align text within card to the left */
 }
-.card img {
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
     width: 100%;
+    height: 180px; /* Consistent image height */
+    object-fit: cover;
     display: block;
 }
-.card h3 {
-    margin: 10px;
+
+.course-card-content {
+    padding: 15px;
 }
-.card p {
-    padding: 0 10px;
+
+.course-card-content h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #4a86e8;
 }
+
+.course-card-content p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.course-card .btn {
+    width: auto;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* --- 5. Lesson Page Content (Targeting Screenshot 2) --- */
+
+/* Container for the lesson content to keep it readable and not too wide */
+.lesson-page-container {
+    max-width: 850px; /* Optimal width for reading text */
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.lesson-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.lesson-content h2, .lesson-content h3 {
+    color: #4a86e8;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Increased font size for lesson body text for better reading */
+.lesson-content p, .lesson-content li, .lesson-content table {
+    font-size: 1.05em; 
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Style for the vocabulary table */
+.lesson-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.lesson-content table th, .lesson-content table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.lesson-content table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+
+/* --- 6. Footer (Unchanged/Refined) --- */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    margin-top: 20px;
+    padding: 30px 0;
     text-align: center;
+    margin-top: 40px;
 }
+
 footer .social a {
     color: #ffcc00;
-    margin: 0 5px;
+    margin: 0 8px;
+    font-size: 1.2em;
     text-decoration: none;
+    transition: color 0.3s;
 }
+
+footer .social a:hover {
+    color: #fff;
+}
+
 footer p {
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
     font-size: 0.9em;
 }
+
+
+/* --- 7. Media Queries for Responsiveness --- */
+@media (max-width: 992px) {
+    /* Two columns on medium screens */
+    .course-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
+    /* Mobile-specific layout */
     .header-container {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .menu-toggle {
         display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
     }
+
+    nav {
+        width: 100%;
+    }
+
     nav ul {
         flex-direction: column;
         width: 100%;
-        display: none;
+        display: none; /* Hidden by default on mobile */
+        text-align: center;
     }
+
     nav.active ul {
-        display: flex;
+        display: flex; /* Shown when menu is toggled with JS */
     }
+
     nav ul li {
         margin: 10px 0;
     }
-    .card-grid {
-        flex-direction: column;
-        align-items: center;
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Single column on small screens */
+    .course-category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .lesson-page-container {
+        margin: 15px;
+        padding: 15px;
     }
 }

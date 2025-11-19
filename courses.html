@@ -9,14 +9,17 @@
     <meta property="og:description" content="Learn about the variety of online courses we offer to empower Afghan women through education.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=AFGWomen+Courses">
     <meta property="og:url" content="https://afgwomen.com/courses.html">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <h1 class="logo">AFG<span>Women</span></h1>
-            <div class="menu-toggle">&#9776;</div>
-            <nav>
+            
+            <div class="menu-toggle" id="menu-toggle">☰</div> 
+
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -31,44 +34,57 @@
         </div>
     </header>
 
-    <section class="container courses-overview">
-        <h2>Our Course Categories</h2>
-        <p>We offer a variety of free online courses to help Afghan women gain valuable skills. Browse our categories below to find courses in languages, media, technology, business, and computer skills.</p>
-        <div class="card-grid">
+    <section class="course-section">
+        <div class="container">
+            <h2>Our Course Categories</h2>
+            <p>We offer a variety of free online courses to help Afghan women gain valuable skills. Browse our categories below to find courses in languages, media, technology, business, and computer skills.</p>
             
-            <div class="card">
-                <img src="images/languages.jpg" alt="Language Courses">
-                <h3>German & English Language Basics</h3>
-                <p><strong>Learning German and English can help you communicate with international organizations and open new opportunities.</strong> This course starts from the very basics (A1 level), covering simple greetings, introductions, and everyday phrases. Every word and example sentence includes a Persian (Farsi) translation to make learning easier.</p>
-                <a href="courses/english/lesson1.html" class="btn">View Courses</a>
-            </div>
-            
-            <div class="card">
-                <img src="images/media-comm.jpg" alt="Media Courses">
-                <h3>Media & Communications</h3>
-                <p><strong>Media (like TV, radio, and the internet) plays a big role in sharing information and education.</strong> You will learn basic media concepts: what media is, how it can educate (like Begum Media projects), and how to tell true information from false. This course uses easy English and Afghan examples to help you think critically about media.</p>
-                <a href="courses/media/lesson1.html" class="btn">View Courses</a>
-            </div>
-            
-            <div class="card">
-                <img src="images/technology.jpg" alt="Technology Courses">
-                <h3>Technology</h3>
-                <p><strong>Technology includes tools like computers, smartphones, and the internet, which can help in daily life.</strong> You will explore technology basics: how to use mobile phones safely, what helpful apps exist, and how tech innovations (like HesabPay) can make life easier and provide digital independence.</p>
-                <a href="courses/technology/lesson1.html" class="btn">View Courses</a>
-            </div>
-            
-            <div class="card">
-                <img src="images/business.jpg" alt="Business Courses">
-                <h3>Business & Financial Independence</h3>
-                <p><strong>Starting a small business can bring income and independence.</strong> In this course, you will learn simple business ideas and planning. We will define terms like entrepreneurship and profit, show how to make a basic plan, set prices, and find customers. Read short stories about Afghan women who grew their businesses.</p>
-                <a href="courses/business/lesson1.html" class="btn">View Courses</a>
-            </div>
-            
-            <div class="card">
-                <img src="images/computer.jpg" alt="Computer Courses">
-                <h3>Computer Skills</h3>
-                <p><strong>Computers and the internet open new opportunities for education and work.</strong> In this course, you will learn very basic computer and internet skills in simple English. We start with what a computer is, how to use programs, and how the internet works, building confidence for online learning and communication.</p>
-                <a href="courses/computer/lesson1.html" class="btn">View Courses</a>
+            <div class="course-category-grid">
+                
+                <div class="course-card">
+                    <img src="images/languages.jpg" alt="Language Courses">
+                    <div class="course-card-content">
+                        <h3>German & English Language Basics</h3>
+                        <p><strong>Learning German and English can help you communicate with international organizations and open new opportunities.</strong> This course starts from the very basics (A1 level), covering simple greetings...</p>
+                        <a href="courses/english/lesson1.html" class="btn">View Courses</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <img src="images/media-comm.jpg" alt="Media Courses">
+                    <div class="course-card-content">
+                        <h3>Media & Communications</h3>
+                        <p><strong>Media (like TV, radio, and the internet) plays a big role in sharing information and education.</strong> You will learn basic media concepts: what media is, how it can educate...</p>
+                        <a href="courses/media/lesson1.html" class="btn">View Courses</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <img src="images/technology.jpg" alt="Technology Courses">
+                    <div class="course-card-content">
+                        <h3>Technology</h3>
+                        <p><strong>Technology includes tools like computers, smartphones, and the internet, which can help in daily life.</strong> You will explore technology basics: how to use mobile phones safely, what helpful apps exist...</p>
+                        <a href="courses/technology/lesson1.html" class="btn">View Courses</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <img src="images/business.jpg" alt="Business Courses">
+                    <div class="course-card-content">
+                        <h3>Business & Financial Independence</h3>
+                        <p><strong>Starting a small business can bring income and independence.</strong> In this course, you will learn simple business ideas and planning. We will define terms like entrepreneurship and profit...</p>
+                        <a href="courses/business/lesson1.html" class="btn">View Courses</a>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <img src="images/computer.jpg" alt="Computer Courses">
+                    <div class="course-card-content">
+                        <h3>Computer Skills</h3>
+                        <p><strong>Computers and the internet open new opportunities for education and work.</strong> In this course, you will learn very basic computer and internet skills in simple English...</p>
+                        <a href="courses/computer/lesson1.html" class="btn">View Courses</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

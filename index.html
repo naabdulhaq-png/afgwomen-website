@@ -9,14 +9,17 @@
     <meta property="og:description" content="AFGWomen provides accessible, high-quality education to Afghan women. Join us to empower through learning.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=AFGWomen+Education">
     <meta property="og:url" content="https://afgwomen.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <h1 class="logo">AFG<span>Women</span></h1>
-            <div class="menu-toggle">&#9776;</div>
-            <nav>
+            
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -37,34 +40,45 @@
             <p>AFGWomen provides accessible, high-quality online education to empower women and build a secure future.</p>
             <div class="hero-buttons">
                 <a href="donate.html" class="btn">Donate</a>
-                <a href="women-support/volunteers.html" class="btn">Join Us</a>
+                <a href="volunteer.html" class="btn">Join Us</a> 
                 <a href="courses.html" class="btn">Learn More</a>
                 <a href="contact.html" class="btn">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <section class="featured-courses container">
+    <section class="course-section container">
         <h2>Featured Courses</h2>
-        <div class="card-grid">
-            <div class="card">
+        
+        <div class="course-category-grid">
+            
+            <div class="course-card">
                 <img src="images/english-featured.jpg" alt="English Course">
-                <h3>English Language Basics</h3>
-                <p>Learn fundamental English skills to improve communication and access more opportunities.</p>
-                <a href="courses/language/english.html" class="btn">Start Course</a>
+                <div class="course-card-content">
+                    <h3>English Language Basics</h3>
+                    <p>Learn fundamental English skills to improve communication and access more opportunities.</p>
+                    <a href="courses/english/lesson1.html" class="btn">Start Course</a>
+                </div>
             </div>
-            <div class="card">
+            
+            <div class="course-card">
                 <img src="images/german-featured.jpg" alt="German Course">
-                <h3>German Language Basics</h3>
-                <p>Master basic German to expand career and educational horizons.</p>
-                <a href="courses/language/german.html" class="btn">Start Course</a>
+                <div class="course-card-content">
+                    <h3>German Language Basics</h3>
+                    <p>Master basic German to expand career and educational horizons.</p>
+                    <a href="courses/german/lesson1.html" class="btn">Start Course</a>
+                </div>
             </div>
-            <div class="card">
+            
+            <div class="course-card">
                 <img src="images/tech-featured.jpg" alt="Technology Course">
-                <h3>Technology Fundamentals</h3>
-                <p>Build essential tech skills, from basic IT knowledge to coding foundations.</p>
-                <a href="courses/technology/IT-fundamentals.html" class="btn">Start Course</a>
+                <div class="course-card-content">
+                    <h3>Technology Fundamentals</h3>
+                    <p>Build essential tech skills, from basic IT knowledge to coding foundations.</p>
+                    <a href="courses/technology/lesson1.html" class="btn">Start Course</a>
+                </div>
             </div>
+            
         </div>
     </section>
 
