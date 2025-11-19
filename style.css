@@ -103,6 +103,20 @@ nav ul li a.btn:hover {
     transform: translateY(-1px);
 }
 
+/* FIX: Ensure hero buttons stay in a single row */
+.hero-buttons {
+    display: flex;
+    /* Allows buttons to wrap to the next line on very small screens */
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+    justify-content: flex-start; 
+}
+
+/* Add some space between the buttons themselves */
+.hero-buttons .btn {
+    margin: 5px 10px 5px 0; /* Top, Right, Bottom, Left */
+}
+
 /* --- 4. Course Categories Section (Targeting Screenshot 1) --- */
 .course-section {
     padding: 50px 0;
