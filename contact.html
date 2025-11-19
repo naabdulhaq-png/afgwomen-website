@@ -9,14 +9,19 @@
     <meta property="og:description" content="Reach out to AFGWomen with your questions or to join our mission.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Contact+AFGWomen">
     <meta property="og:url" content="https://afgwomen.com/contact.html">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <h1 class="logo">AFG<span>Women</span></h1>
-            <div class="menu-toggle">&#9776;</div>
-            <nav>
+            
+            <!-- 1. Mobile Toggle Edit: Added ID for JavaScript -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            
+            <!-- 2. Navigation Edit: Added ID for JavaScript -->
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -24,7 +29,8 @@
                     <li><a href="vision.html">Vision</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="donate.html" class="btn">Donate</a></li>
+                    <!-- 3. Donate Link Edit: Updated to GoFundMe URL -->
+                    <li><a href="https://gofund.me/2747246ec" class="btn">Donate</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
@@ -55,7 +61,7 @@
                 <a href="#">Twitter</a> |
                 <a href="#">Instagram</a>
             </div>
-            <p>&copy; 2025 AFGWomen. All rights reserved.</p>
+            <p>&copy; 2022 AFGWomen. All rights reserved.</p>
         </div>
     </footer>
 

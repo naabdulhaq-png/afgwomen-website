@@ -9,14 +9,19 @@
     <meta property="og:description" content="Learn about our initiatives to support and empower Afghan women in education and community development.">
     <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Women+Support">
     <meta property="og:url" content="https://afgwomen.com/women-support/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
             <h1 class="logo">AFG<span>Women</span></h1>
-            <div class="menu-toggle">&#9776;</div>
-            <nav>
+            
+            <!-- 1. Mobile Toggle Edit: Added ID for JavaScript -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            
+            <!-- 2. Navigation Edit: Added ID for JavaScript -->
+            <nav id="main-nav">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../about.html">About</a></li>
@@ -24,7 +29,8 @@
                     <li><a href="../vision.html">Vision</a></li>
                     <li><a href="../projects.html">Projects</a></li>
                     <li><a href="../blog.html">Blog</a></li>
-                    <li><a href="../donate.html" class="btn">Donate</a></li>
+                    <!-- 3. Donate Link Edit: Updated to GoFundMe URL (Correct relative path) -->
+                    <li><a href="https://gofund.me/2747246ec" class="btn">Donate</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -34,24 +40,32 @@
     <section class="container women-support">
         <h2>Supporting Afghan Women</h2>
         <p>At AFGWomen, supporting Afghan women goes beyond education. We create a community that fosters mentorship, peer support, and personal development. Through our initiatives, women gain confidence, skills, and a supportive network to succeed.</p>
-        <div class="card-grid">
-            <div class="card">
+        
+        <!-- 4. Updated Card Classes for Responsive Grid -->
+        <div class="course-category-grid">
+            <div class="course-card">
                 <img src="https://via.placeholder.com/300x200.png?text=Volunteers" alt="Volunteers">
-                <h3>Become a Volunteer</h3>
-                <p>Join our team of volunteers to teach, mentor, or create content. Your expertise can make a real difference.</p>
-                <a href="volunteers.html" class="btn">Learn More</a>
+                <div class="course-card-content">
+                    <h3>Become a Volunteer</h3>
+                    <p>Join our team of volunteers to teach, mentor, or create content. Your expertise can make a real difference.</p>
+                    <a href="volunteers.html" class="btn">Learn More</a>
+                </div>
             </div>
-            <div class="card">
+            <div class="course-card">
                 <img src="https://via.placeholder.com/300x200.png?text=Stories" alt="Success Stories">
-                <h3>Success Stories</h3>
-                <p>Read inspiring stories of women who have transformed their lives through our programs.</p>
-                <a href="success-stories.html" class="btn">Learn More</a>
+                <div class="course-card-content">
+                    <h3>Success Stories</h3>
+                    <p>Read inspiring stories of women who have transformed their lives through our programs.</p>
+                    <a href="success-stories.html" class="btn">Learn More</a>
+                </div>
             </div>
-            <div class="card">
+            <div class="course-card">
                 <img src="https://via.placeholder.com/300x200.png?text=Partnerships" alt="Partnerships">
-                <h3>Our Partners</h3>
-                <p>We partner with organizations worldwide to expand our reach. Learn about our collaborations.</p>
-                <a href="partnerships.html" class="btn">Learn More</a>
+                <div class="course-card-content">
+                    <h3>Our Partners</h3>
+                    <p>We partner with organizations worldwide to expand our reach. Learn about our collaborations.</p>
+                    <a href="partnerships.html" class="btn">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
@@ -63,7 +77,7 @@
                 <a href="#">Twitter</a> |
                 <a href="#">Instagram</a>
             </div>
-            <p>&copy; 2025 AFGWomen. All rights reserved.</p>
+            <p>&copy; 2022 AFGWomen. All rights reserved.</p>
         </div>
     </footer>
     <script src="../script.js"></script>

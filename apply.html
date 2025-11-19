@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .application-form {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 30px;
             background: #fff;
             border-radius: 8px;
@@ -25,15 +25,18 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
+        /* Container to manage the embedded Google Form */
         .iframe-container {
             border: 1px solid #ddd;
             border-radius: 4px;
             overflow: hidden;
-            height: 800px; /* Adjust height as needed */
+            width: 100%; 
+            margin-top: 20px;
         }
         .iframe-container iframe {
+            /* Using your specified height */
             width: 100%;
-            height: 100%;
+            height: 2701px; 
             border: none;
         }
     </style>
@@ -70,14 +73,18 @@
         
         <p><strong>Note: The enrollment process is manual and may take up to 48 hours.</strong></p>
 
-        <!-- Placeholder for your actual Google Form or other application form -->
+        <!-- EMBEDDED GOOGLE FORM - FIXED ERROR -->
         <div class="iframe-container">
             <iframe 
-                src="YOUR_GOOGLE_FORM_EMBED_LINK_GOES_HERE" 
-                title="AFGWomen Course Application Form">
+                src="https://docs.google.com/forms/d/e/1FAIpQLSevNckohsPOZpu1yAulkraRhMc0TdCzVyHKTtjOnbiZ42gmEA/viewform?embedded=true" 
+                title="AFGWomen Course Application Form"
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
             </iframe>
         </div>
-        <p class="text-center mt-4">For immediate questions, please <a href="contact.html">Contact Us</a>.</p>
+        <p style="text-align: center; margin-top: 30px;">For immediate questions, please <a href="contact.html">Contact Us</a>.</p>
     </section>
 
     <footer>
