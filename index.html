@@ -4,33 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFGWomen - Coming Soon</title>
+    <!-- Use Open Sans for cleaner typography, even on this page -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* 1. Body Styling: Ensure full screen height and no margin/padding */
         body {
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             text-align: center;
-            background-color: #f4f4f4; /* Light background for the page */
+            background-color: #f4f4f4;
+            font-family: 'Open Sans', sans-serif;
         }
+        
+        /* 2. Content Box: Use max-width to control text size, but allow the image to stretch */
         .content {
             background: #fff;
-            padding: 40px;
+            padding: 40px 20px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            max-width: 600px; /* Constrain width */
-            width: 90%; /* Responsive width */
+            max-width: 800px; /* Controls the maximum width of the text block */
+            width: 90%;
+            margin: 20px auto;
         }
+
+        /* 3. Image Styling: Make the image take up nearly the full viewport width */
+        .coming-soon-image {
+            width: 100%; /* Take 100% of the parent .image-wrapper */
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* New Wrapper to control the image width outside the content box */
+        .image-wrapper {
+            width: 100vw; /* Take full viewport width */
+            max-height: 60vh; /* Limit the height to 60% of viewport height */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* 4. Typography Adjustments */
         .content h1.logo {
             font-size: 2.5em; 
             margin-bottom: 20px;
-            color: #333; /* Ensure logo text color is visible */
+            color: #333;
         }
         .content h2 {
-            font-size: 1.8em;
-            color: #4a86e8; /* Blue color for heading */
+            font-size: 2em;
+            color: #4a86e8;
             margin-bottom: 15px;
         }
         .content p {
@@ -39,36 +69,23 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        .coming-soon-image {
-            max-width: 100%; /* Make image responsive */
-            height: auto;
-            border-radius: 4px;
-            margin-bottom: 25px; /* Space between image and text */
-        }
-        .btn {
-            display: inline-block;
-            background-color: #4a86e8; /* Blue button */
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #3a75d1;
-        }
+
+        /* Hide standard header/footer */
         header, footer {
-            display: none; /* Keep header and footer hidden */
+            display: none;
         }
     </style>
 </head>
 <body>
+    
+    <div class="image-wrapper">
+        <!-- 1. IMAGE: Use the full-width wrapper -->
+        <img src="images/empowering-afghan-women.jpg" alt="Empowering Afghan Women" class="coming-soon-image">
+    </div>
+
+    <!-- 2. TEXT CONTENT: Constrained for readability -->
     <div class="content">
         <h1 class="logo">AFG<span>Women</span></h1>
-        
-        <!-- *** FIX: UPDATED THE SRC TO THE LIKELY CORRECT LOCAL PATH *** -->
-        <img src="images/empowering-afghan-women.jpg" alt="Empowering Afghan Women" class="coming-soon-image">
         
         <h2>Our Online Education Platform is Launching Soon!</h2>
         <p>We are working hard to finalize our comprehensive courses and streamline the enrollment system. Please check back shortly for exciting updates!</p>
