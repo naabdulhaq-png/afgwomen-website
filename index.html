@@ -6,7 +6,6 @@
     <title>AFGWomen - Coming Soon</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Center content and ensure it takes full height */
         body {
             display: flex;
             flex-direction: column;
@@ -14,25 +13,66 @@
             align-items: center;
             min-height: 100vh;
             text-align: center;
+            background-color: #f4f4f4; /* Light background for the page */
         }
         .content {
+            background: #fff;
             padding: 40px;
-            border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 600px; /* Constrain width */
+            width: 90%; /* Responsive width */
+        }
+        .content h1.logo {
+            font-size: 2.5em; 
+            margin-bottom: 20px;
+            color: #333; /* Ensure logo text color is visible */
+        }
+        .content h2 {
+            font-size: 1.8em;
+            color: #4a86e8; /* Blue color for heading */
+            margin-bottom: 15px;
+        }
+        .content p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .coming-soon-image {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 25px; /* Space between image and text */
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4a86e8; /* Blue button */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #3a75d1;
         }
         header, footer {
-            display: none; /* Hide header and footer */
+            display: none; /* Keep header and footer hidden */
         }
     </style>
 </head>
 <body>
     <div class="content">
-        <h1 class="logo" style="font-size: 2.5em; margin-bottom: 20px;">AFG<span>Women</span></h1>
+        <h1 class="logo">AFG<span>Women</span></h1>
+        
+        <img src="https://via.placeholder.com/500x300.png?text=Empowering+Afghan+Women" alt="Empowering Afghan Women" class="coming-soon-image">
+        
         <h2>Our Online Education Platform is Launching Soon!</h2>
-        <p>We are working hard to finalize the courses and enrollment system. Please check back shortly.</p>
-        <p>In the meantime, you can support our mission:</p>
-        <a href="https://gofund.me/2747246ec" class="btn" style="margin-top: 15px;">Donate to Our Fundraiser</a>
+        <p>We are working hard to finalize our comprehensive courses and streamline the enrollment system. Please check back shortly for exciting updates!</p>
+        <p>In the meantime, you can support our mission to empower Afghan women through education:</p>
+        <a href="https://gofund.me/2747246ec" class="btn">Donate to Our Fundraiser</a>
     </div>
 </body>
 </html>
